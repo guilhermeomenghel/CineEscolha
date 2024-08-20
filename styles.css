@@ -1,0 +1,186 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px rgb(233, 237, 241);
+  padding: 20px;
+  font-size: 32px;
+  color: rgb(231, 234, 238);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  color: rgb(18, 16, 16);
+  background: black;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  padding-top: 80px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e7eaee;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: #d81f26;
+}
+
+section {
+  background: #d81f26;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 15px 20px rgba(216, 31, 38, 0.5), 0 25px 40px rgba(0, 0, 0, 0.3);
+  width: 95%;
+  margin: auto;
+}
+
+.chamada-texto {
+  margin-right: 5%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.menu-categorias h1 {
+  color: #e7eaee;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+nav.categorias {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+nav.categorias ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav.categorias ul li {
+  margin: 0 20px;
+}
+
+nav.categorias ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav.categorias ul li a:hover {
+  background-color: #d81f26;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(231, 234, 238);
+  padding: 50px;
+  font-size: 50px;
+}
+
+.video-texto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 70px;
+}
+
+.video-texto-container iframe {
+  border: 2px solid #d81f26;
+}
+
+.video-descricao {
+  color: #e7eaee;
+  font-size: 18px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.categoria-acao,
+.categoria-comedia,
+.categoria-romance,
+.categoria-fantasia,
+.categoria-terror {
+  margin: 40px auto;
+  width: 90%;
+}
+
+.categoria-acao h2,
+.categoria-comedia h2,
+.categoria-romance h2,
+.categoria-fantasia h2,
+.categoria-terror h2 {
+  text-align: center;
+  color: #e7eaee;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.video-texto-container {
+  margin-bottom: 30px;
+}
+
+.categoria-acao,
+.categoria-comedia,
+.categoria-romance,
+.categoria-fantasia,
+.categoria-terror {
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(216, 31, 37, 0.533);
+}
+
+@media screen and (max-width: 768px) {
+  .video-texto-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-descricao {
+    text-align: center;
+    max-width: 100%;
+  }
+}
